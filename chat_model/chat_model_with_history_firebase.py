@@ -23,7 +23,7 @@ Steps to replicate this example:
 load_dotenv()
 
 # Setup Firebase Firestore
-PROJECT_ID = "langchain-a5989"
+PROJECT_ID = "langchain-99f51"
 SESSION_ID = "user_session_new"  # This could be a username or a unique ID
 COLLECTION_NAME = "chat_history"
 
@@ -42,7 +42,7 @@ print("Chat History Initialized.")
 print("Current Chat History:", chat_history.messages)
 
 # Initialize Chat Model
-model = ChatOpenAI()
+model = ChatOpenAI(model="gpt-4o")
 
 print("Start chatting with the AI. Type 'exit' to quit.")
 
